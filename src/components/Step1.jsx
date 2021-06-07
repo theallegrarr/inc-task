@@ -3,10 +3,10 @@ import { BsEyeFill, BsChevronDown } from "react-icons/bs";
 export default function Step1({ form, updateForm }){
 
     const formFields = [
-        { name: 'name', ph: 'Your name'},
-        { name: 'email', ph: 'Email address'},
-        { name: 'type', ph: 'I would describe my user type as', icon: BsChevronDown},
-        { name: 'password', ph: 'Password', type: 'password', icon: BsEyeFill},
+        { id: 11, name: 'name', ph: 'Your name'},
+        { id: 12, name: 'email', ph: 'Email address'},
+        { id: 13, name: 'type', ph: 'I would describe my user type as', icon: BsChevronDown},
+        { id: 14, name: 'password', ph: 'Password', type: 'password', icon: BsEyeFill},
     ]
 
     return(
@@ -17,8 +17,8 @@ export default function Step1({ form, updateForm }){
             </div>
             <div className='input-group flex-column'>
                 {
-                    formFields.map((field, i) => (
-                        <div className='d-grid' key={i}>
+                    formFields.map((field) => (
+                        <div className='d-grid' key={field.id}>
                             <input
                                 placeholder={field.ph}
                                 name={field.name}
