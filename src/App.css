@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  max-height: 100vh;
+  overflow: hidden;
 }
 
 .App-logo {
@@ -34,5 +36,88 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.cta-area {
+  width: 35vw;
+  padding-top: 45vh;
+  color: white;
+  background-color: #286ffa;
+  min-height: 100vh;
+}
+
+.steps {
+  justify-content: flex-end;
+  padding: 20px 30px 0 0;
+  max-width: 95vw;
+}
+
+.steps p {
+  font-size: 6pt;
+  font-weight: 800;
+}
+
+.steps svg {
+  width: 5px;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.steps .small svg {
+  width: 3px;
+}
+
+h5 {
+  text-align: left;
+  padding: 30px 70px 0 70px;
+  font-weight: 300;
+}
+
+.onboard-form {
+  width: 35vw;
+  min-width: 300px;
+  padding-top: 15vh;
+  /* top | right | bottom | left */
+  padding: 15vh 15vw 0 15vw;
+}
+
+.onboard-form h3 {
+  text-align: left;
+}
+
+.small-p p, a {
+  font-size: 8pt;
+  padding: 0;
+  margin: 0;
+}
+
+.small-p a {
+  color: #286ffa;
+  font-weight: 700;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.small-p a:hover {
+  font-weight: 900;
+}
+
+@media only screen and (max-width: 800px) {
+  .cta-area {
+    display: none;
+  }
+  .onboard-form {
+    width: 100vw;
+    padding: 15vh 5vw 0 5vw;
   }
 }
