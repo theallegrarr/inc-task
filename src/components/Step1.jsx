@@ -3,8 +3,8 @@ import { BsEyeFill, BsChevronDown } from "react-icons/bs";
 export default function Step1({ form, updateForm }){
 
     const formFields = [
-        { name: 'name', ph: 'Your Name'},
-        { name: 'email', ph: 'Email Address'},
+        { name: 'name', ph: 'Your name'},
+        { name: 'email', ph: 'Email address'},
         { name: 'type', ph: 'I would describe my user type as', icon: BsChevronDown},
         { name: 'password', ph: 'Password', type: 'password', icon: BsEyeFill},
     ]
